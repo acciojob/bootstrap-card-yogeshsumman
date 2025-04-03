@@ -1,16 +1,71 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Card Example</title>
+    <!-- Bootstrap 4.3.1 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styles to match the image */
+        .card-img-top {
+            width: 100%;
+            height: 200px; /* Fixed height to match the image aspect ratio */
+            object-fit: cover;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+        }
+        .card {
+            border-radius: 0.25rem;
+            overflow: hidden;
+        }
+        .alert-section {
+            border-radius: 0.25rem;
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Container for the cards -->
+    <div class="container my-4">
+        <!-- Card 1 -->
+        <div class="card bg-light mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Welcome to Sync5</h2>
+                <h6 class="card-subtitle mb-2 text-muted">New Features</h6>
+                <h5 class="card-title">Mobile and Tablet support</h5>
+                <p class="card-text">With this new update you will be able to sync your work across a large number of platforms.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
 
+        <!-- Card 2 -->
+        <div class="card bg-light">
+            <!-- Alert Section -->
+            <div class="alert-section bg-danger text-white p-3">
+                <h6 class="card-subtitle mb-2">Alert</h6>
+                <h5 class="card-title">Node Dead</h5>
+                <p class="card-text">Node 5 (east-us) is offline for the last 12 days.</p>
+            </div>
+            <!-- Image -->
+            <img src="https://picsum.photos/600/200?random=1" class="card-img-top" alt="Underwater Scene">
+            <!-- Content Below Image -->
+            <div class="card-body">
+                <h5 class="card-title">President under Pressure</h5>
+                <p class="card-text">The US president is under pressure to respond to a widespread cyber-attack linked to China.</p>
+                <p class="card-text"><small class="text-muted">Last updated 12 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 4.3.1 JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
