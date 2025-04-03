@@ -12,7 +12,7 @@
         /* Custom styles to match the image */
         .card-img-top {
             width: 100%;
-            height: 200px; /* Fixed height to match the image aspect ratio */
+            height: 200px;
             object-fit: cover;
             border-top-left-radius: 0.25rem;
             border-top-right-radius: 0.25rem;
@@ -21,9 +21,8 @@
             border-radius: 0.25rem;
             overflow: hidden;
         }
-        .alert-section {
-            border-radius: 0.25rem;
-            margin-bottom: 0;
+        .card-header {
+            border-bottom: none; /* Remove border to match the image */
         }
     </style>
 </head>
@@ -33,8 +32,10 @@
     <div class="container my-4">
         <!-- Card 1 -->
         <div class="card bg-light mb-4">
+            <div class="card-header">
+                <h2 class="card-title mb-0">Welcome to Sync5</h2>
+            </div>
             <div class="card-body">
-                <h2 class="card-title">Welcome to Sync5</h2>
                 <h6 class="card-subtitle mb-2 text-muted">New Features</h6>
                 <h5 class="card-title">Mobile and Tablet support</h5>
                 <p class="card-text">With this new update you will be able to sync your work across a large number of platforms.</p>
@@ -43,17 +44,14 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="card bg-light">
-            <!-- Alert Section -->
-            <div class="alert-section bg-danger text-white p-3">
+        <div class="card bg-danger text-white">
+            <div class="card-header">
                 <h6 class="card-subtitle mb-2">Alert</h6>
                 <h5 class="card-title">Node Dead</h5>
                 <p class="card-text">Node 5 (east-us) is offline for the last 12 days.</p>
             </div>
-            <!-- Image -->
             <img src="https://picsum.photos/600/200?random=1" class="card-img-top" alt="Underwater Scene">
-            <!-- Content Below Image -->
-            <div class="card-body">
+            <div class="card-body bg-light text-dark">
                 <h5 class="card-title">President under Pressure</h5>
                 <p class="card-text">The US president is under pressure to respond to a widespread cyber-attack linked to China.</p>
                 <p class="card-text"><small class="text-muted">Last updated 12 mins ago</small></p>
